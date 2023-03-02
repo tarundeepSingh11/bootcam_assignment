@@ -1,10 +1,10 @@
-public class question3 {
+class question {
     public static void main(String[] args) {
 
         // NoClassDefFoundError example
         try {
             // Try to create an instance of a non-existent class
-            NonExistentClass obj = new NonExistentClass();
+//            NonExistentClass obj = new NonExistentClass();
         } catch (NoClassDefFoundError e) {
             System.out.println("NoClassDefFoundError caught: " + e.getMessage());
         }
