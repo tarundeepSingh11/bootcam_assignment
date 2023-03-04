@@ -1,3 +1,5 @@
+package question1;
+
 enum Size {
 
     // enum constants calling the enum constructors
