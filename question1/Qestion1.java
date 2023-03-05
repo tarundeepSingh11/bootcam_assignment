@@ -10,10 +10,8 @@ enum Size {
 
     private final String price;
 
-    // private enum constructor
-    private Size(String price) {
-        this.price = price;
-    }
+     //private enum constructor();
+    private Size(String price) {this.price = price;}
 
     public String getPrice() {
         return price;
