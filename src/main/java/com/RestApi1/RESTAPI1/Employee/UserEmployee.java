@@ -33,5 +33,9 @@ public List<Employee> retrieveAllEmployee(){
     public void creatEmployee(@Valid @RequestBody Employee employee){
       service.save(employee);
     }
+    @PutMapping("/Employee")
+    public void UpadteEmployee(@Valid @RequestBody Employee employee){
+         this.service.update(employee);
+    }
 
 }

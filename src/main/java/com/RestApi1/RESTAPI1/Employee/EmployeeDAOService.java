@@ -1,6 +1,7 @@
 package com.RestApi1.RESTAPI1.Employee;
 
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -32,6 +33,16 @@ public class EmployeeDAOService {
         employee.setId(++count);
         employeeList.add(employee);
         return employee;
+    }
+    public void update(Employee employee){
+        Employee ans=null;
+        for(Employee e:employeeList){
+            if(e.getId()==employee.getId()){
+                e.setAge(employee.getAge());
+                e.setName(employee.getName());
+                break;
+            }
+        }
     }
 
 
